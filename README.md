@@ -47,8 +47,11 @@ cargo build --release
 # experimentally using strip to make the binary 10x smaller:
 strip target/release/wsl_open_browser
 ```
-
-Copy the file target/release/wsl_open_browser to /usr/bin.  
+Maybe the file needs to be marked as executable, I am not sure:
+```bash
+chmod a+x target/release/wsl_open_browser
+```
+Copy the file `target/release/wsl_open_browser` to `/usr/bin`.  
 Now we can open the browser like this:  
 ```bash
 wsl_open_browser http://google.com
