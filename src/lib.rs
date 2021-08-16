@@ -107,6 +107,8 @@
 
 use unwrap::unwrap;
 
+/// Inside WSL2 opens a html file in the browser that is in Win10
+/// The local file path is transformed between Linux and Win10 notation.
 pub fn open_browser(arg_1: &str) {
     // absolute Linux path
     let mut arg = arg_1.to_string();

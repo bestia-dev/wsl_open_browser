@@ -1,1 +1,1 @@
-initSidebarItems({"fn":[["open_browser",""]]});
+initSidebarItems({"fn":[["open_browser","Inside WSL2 opens a html file in the browser that is in Win10 The local file path is transformed between Linux and Win10 notation."]]});

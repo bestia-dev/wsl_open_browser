@@ -3,7 +3,7 @@ name = "wsl_open_browser"
 version = "2021.816.1135"
 authors = ["Luciano Bestia <LucianoBestia@gmail.com>"]
 edition = "2018"
-description = "Inside WSL2 I want to open a html file in the browser, but the browser is in Win10"
+description = "Inside WSL2 opens a html file in the browser that is in Win10. The local file path is transformed between Linux and Win10 notation."
 repository = "https://github.com/LucianoBestia/wsl_open_browser"
 publish = false
 
