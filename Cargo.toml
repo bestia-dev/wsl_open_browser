@@ -1,10 +1,11 @@
 [package]
 name = "wsl_open_browser"
-version = "0.1.0"
+version = "2021.816.1135"
 authors = ["Luciano Bestia <LucianoBestia@gmail.com>"]
 edition = "2018"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+description = "Inside WSL2 I want to open a html file in the browser, but the browser is in Win10"
+repository = "https://github.com/LucianoBestia/wsl_open_browser"
+publish = false
 
 [dependencies]
 unwrap="1.2.1"
