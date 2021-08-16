@@ -60,6 +60,7 @@ Let's make a Rust CLI for that.
 ## Development
 
 This is a simple binary. For good habit I separated the lib from the bin.  
+Use [cargo-auto](https://crates.io/crates/cargo-auto) to run automation tasks: build, release, doc, copy_to_usr_bin,....  
 To build and run with parameters use this:  
 
 ```bash
@@ -68,22 +69,7 @@ cargo run -- /home/luciano/index.html
 cargo run -- /mnt/c/Users/Luciano/Downloads/index.html
 ```
 
-For the final build:  
-
-```bash
-cargo build --release
-# experimentally using strip to make the binary 10x smaller:
-strip target/release/wsl_open_browser
-```
-
-Maybe the file needs to be marked as executable, I am not sure:
-
-```bash
-chmod a+x target/release/wsl_open_browser
-```
-
-Copy the file `target/release/wsl_open_browser` to `/usr/bin`.  
-Now we can open the browser like this:  
+After `cargo auto copy_to_usr_bin` we can now open the browser like this:  
 
 ```bash
 wsl_open_browser http://google.com
@@ -93,7 +79,7 @@ wsl_open_browser /mnt/c/Users/Luciano/Downloads/index.html
 
 ## Open with xdg-open
 
-But I want to use xdg-open. For that I need to set the environment variable BROWSER. To make it persistant, copy this line to ~/.bashrc.
+But I want to use xdg-open. For that I need to set the environment variable BROWSER. To make it persistent, copy this line to ~/.bashrc.
 
 ```bash
 export BROWSER='/usr/bin/wsl_open_browser'
