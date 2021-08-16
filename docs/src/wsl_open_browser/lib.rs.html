@@ -130,18 +130,24 @@
 <span id="128">128</span>
 <span id="129">129</span>
 <span id="130">130</span>
+<span id="131">131</span>
+<span id="132">132</span>
+<span id="133">133</span>
+<span id="134">134</span>
 </pre><pre class="rust">
 <span class="comment">// region: auto_md_to_doc_comments include README.md A //!</span>
 <span class="doccomment">//! # wsl_open_browser</span>
 <span class="doccomment">//!</span>
-<span class="doccomment">//! **Inside WSL2 I want to open a html file in the browser, but the browser is in Win10**  </span>
-<span class="doccomment">//! ***[repository](https://github.com/LucianoBestia/wsl_open_browser); version: 2021.816.1135  date: 2021-08-16 authors: Luciano Bestia***  </span>
+<span class="doccomment">//! **Inside WSL2 opens a html file in the browser that is in Win10. The local file path is transformed between Linux and Win10 notation.**  </span>
+<span class="doccomment">//! ***[repository](https://github.com/LucianoBestia/wsl_open_browser); version: 2021.816.1157  date: 2021-08-16 authors: Luciano Bestia***  </span>
 <span class="doccomment">//!</span>
-<span class="doccomment">//! [![Lines in Rust code](https://img.shields.io/badge/Lines_in_Rust-22-green.svg)](https://github.com/LucianoBestia/wsl_open_browser/)</span>
-<span class="doccomment">//! [![Lines in Doc comments](https://img.shields.io/badge/Lines_in_Doc_comments-0-blue.svg)](https://github.com/LucianoBestia/wsl_open_browser/)</span>
+<span class="doccomment">//! [![Lines in Rust code](https://img.shields.io/badge/Lines_in_Rust-23-green.svg)](https://github.com/LucianoBestia/wsl_open_browser/)</span>
+<span class="doccomment">//! [![Lines in Doc comments](https://img.shields.io/badge/Lines_in_Doc_comments-108-blue.svg)](https://github.com/LucianoBestia/wsl_open_browser/)</span>
 <span class="doccomment">//! [![Lines in Comments](https://img.shields.io/badge/Lines_in_comments-11-purple.svg)](https://github.com/LucianoBestia/wsl_open_browser/)</span>
 <span class="doccomment">//! [![Lines in examples](https://img.shields.io/badge/Lines_in_examples-0-yellow.svg)](https://github.com/LucianoBestia/wsl_open_browser/)</span>
 <span class="doccomment">//! [![Lines in tests](https://img.shields.io/badge/Lines_in_tests-0-orange.svg)](https://github.com/LucianoBestia/wsl_open_browser/)</span>
+<span class="doccomment">//!</span>
+<span class="doccomment">//! [![Lib.rs](https://img.shields.io/badge/Lib.rs-rust-orange.svg)](https://lib.rs/crates/cargo_auto_lib/) [![Licence](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/LucianoBestia/cargo_auto_lib/blob/master/LICENSE) [![Rust](https://github.com/LucianoBestia/cargo_auto_lib/workflows/RustAction/badge.svg)](https://github.com/LucianoBestia/cargo_auto_lib/)  </span>
 <span class="doccomment">//!</span>
 <span class="doccomment">//! Inside WSL2 I want to open a html file in the browser. But the browser is in Win10.  </span>
 <span class="doccomment">//! This is useful in Rust for the documentation:</span>
@@ -257,9 +263,11 @@
     <span class="comment">// call the symbolic link for chrome</span>
     <span class="comment">// ln -s &quot;/mnt/c/Program Files/Google/Chrome/Application/chrome.exe&quot; /usr/bin/chrome_in_win</span>
     <span class="comment">// /usr/bin/chrome_in_win</span>
-    <span class="macro">unwrap!</span>(<span class="ident">std::process::Command::new</span>(<span class="string">&quot;/usr/bin/chrome_in_win&quot;</span>)
+    <span class="kw">let</span> <span class="ident">child</span> <span class="op">=</span> <span class="macro">unwrap!</span>(<span class="ident">std::process::Command::new</span>(<span class="string">&quot;/usr/bin/chrome_in_win&quot;</span>)
         .<span class="ident">arg</span>(<span class="ident">arg</span>)
         .<span class="ident">spawn</span>());
+
+    <span class="ident">std::mem::forget</span>(<span class="ident">child</span>);
 }
 </pre></div>
 </section><section id="search" class="content hidden"></section><div id="rustdoc-vars" data-root-path="../../" data-current-crate="wsl_open_browser" data-search-index-js="../../search-index.js" data-search-js="../../search.js"></div><script src="../../main.js"></script><script src="../../source-script.js"></script><script src="../../source-files.js"></script></body></html>

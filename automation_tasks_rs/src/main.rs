@@ -30,6 +30,8 @@ fn match_arguments_and_call_tasks(mut args: std::env::Args){
                 task_build();
             } else if &task == "release" || &task == "r" {
                 task_release();
+            } else if &task == "copy_to_usr_bin" {
+                task_copy_to_usr_bin();
             } else if &task == "increment_minor" {
                 task_increment_minor();
             } else if &task == "docs" || &task == "doc" || &task == "d" {
@@ -49,7 +51,8 @@ fn print_help() {
     println!("");
     println!("User defined tasks in automation_tasks_rs:");
     println!("cargo auto build - builds the crate in debug mode, fmt");
-    println!("cargo auto release - builds the crate in release mode, version from date, fmt");
+    println!("cargo auto release - builds the crate in release mode, version from date, fmt, strip");
+    println!("cargo auto copy_to_usr_bin - copies target/release/wsl_open_browser to /usr/bin");
     println!("cargo auto increment_minor - increments the semver version minor part (only for libraries)");
     println!("cargo auto docs - builds the docs, copy to docs directory");
     println!("cargo auto publish_to_crates_io - publish to crates.io, git tag");
@@ -62,9 +65,7 @@ fn print_help() {
 fn task_build() {    
     #[rustfmt::skip]
     let shell_commands = [
-        "echo $ cargo fmt", 
         "cargo fmt", 
-        "echo $ cargo build", 
         "cargo build"];
     run_shell_commands(shell_commands.to_vec());
 }
@@ -77,10 +78,14 @@ fn task_release() {
     auto_cargo_toml_to_md();
     auto_lines_of_code("");
 
-    println!("$ cargo fmt");
     run_shell_command("cargo fmt");
-    println!("$ cargo build --release");
     run_shell_command("cargo build --release");
+    run_shell_command("strip target/release/wsl_open_browser");
+}
+
+/// copy striped binary to /usr/bin
+fn task_copy_to_usr_bin() {
+    run_shell_command("cp target/release/wsl_open_browser /usr/bin/wsl_open_browser");
 }
 
 /// semver is used for libraries, increment the second part of the version
@@ -94,10 +99,8 @@ fn task_docs() {
     auto_md_to_doc_comments();        
     #[rustfmt::skip]
     let shell_commands = [
-        "echo $ cargo doc --no-deps --document-private-items --open",
         "cargo doc --no-deps --document-private-items --open",        
         // copy to /docs/ because it is github standard
-        "echo $ rsync -a --info=progress2 --delete-after target/doc/ docs/",
         "rsync -a --info=progress2 --delete-after target/doc/ docs/",
         "echo Create simple index.html file in docs directory",
         &format!("echo \"<meta http-equiv=\\\"refresh\\\" content=\\\"0; url={}/index.html\\\" />\" > docs/index.html",package_name().replace("-","_")) ,

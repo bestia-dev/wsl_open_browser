@@ -4,19 +4,21 @@
 
 [comment]: # (auto_cargo_toml_to_md start)
 
-**Inside WSL2 I want to open a html file in the browser, but the browser is in Win10**  
-***[repository](https://github.com/LucianoBestia/wsl_open_browser); version: 2021.816.1135  date: 2021-08-16 authors: Luciano Bestia***  
+**Inside WSL2 opens a html file in the browser that is in Win10. The local file path is transformed between Linux and Win10 notation.**  
+***[repository](https://github.com/LucianoBestia/wsl_open_browser); version: 2021.816.1157  date: 2021-08-16 authors: Luciano Bestia***  
 
 [comment]: # (auto_cargo_toml_to_md end)
 
 [comment]: # (auto_lines_of_code start)
-[![Lines in Rust code](https://img.shields.io/badge/Lines_in_Rust-22-green.svg)](https://github.com/LucianoBestia/wsl_open_browser/)
-[![Lines in Doc comments](https://img.shields.io/badge/Lines_in_Doc_comments-0-blue.svg)](https://github.com/LucianoBestia/wsl_open_browser/)
+[![Lines in Rust code](https://img.shields.io/badge/Lines_in_Rust-23-green.svg)](https://github.com/LucianoBestia/wsl_open_browser/)
+[![Lines in Doc comments](https://img.shields.io/badge/Lines_in_Doc_comments-108-blue.svg)](https://github.com/LucianoBestia/wsl_open_browser/)
 [![Lines in Comments](https://img.shields.io/badge/Lines_in_comments-11-purple.svg)](https://github.com/LucianoBestia/wsl_open_browser/)
 [![Lines in examples](https://img.shields.io/badge/Lines_in_examples-0-yellow.svg)](https://github.com/LucianoBestia/wsl_open_browser/)
 [![Lines in tests](https://img.shields.io/badge/Lines_in_tests-0-orange.svg)](https://github.com/LucianoBestia/wsl_open_browser/)
 
 [comment]: # (auto_lines_of_code end)
+
+[![Lib.rs](https://img.shields.io/badge/Lib.rs-rust-orange.svg)](https://lib.rs/crates/cargo_auto_lib/) [![Licence](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/LucianoBestia/cargo_auto_lib/blob/master/LICENSE) [![Rust](https://github.com/LucianoBestia/cargo_auto_lib/workflows/RustAction/badge.svg)](https://github.com/LucianoBestia/cargo_auto_lib/)  
 
 Inside WSL2 I want to open a html file in the browser. But the browser is in Win10.  
 This is useful in Rust for the documentation:
