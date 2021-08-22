@@ -74,7 +74,7 @@ fn completion() {
             "build",
             "release",
             "copy_to_usr_bin",
-            r#"commit_and_push""#,
+            "commit_and_push",
             "doc",
             "publish_to_crates_io",
         ];
@@ -163,7 +163,7 @@ fn task_commit_and_push(arg_2: Option<String>) {
     match arg_2 {
         None => println!("Error: message for commit is mandatory"),
         Some(message) => {
-            run_shell_command(&format!(r#"git commit -am"{}""#, message));
+            run_shell_command(&format!(r#"git commit -am "{}""#, message));
             run_shell_command("git push");
             println!(
                 r#"
