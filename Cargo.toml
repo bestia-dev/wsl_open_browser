@@ -5,6 +5,10 @@ authors = ["Luciano Bestia <LucianoBestia@gmail.com>"]
 edition = "2018"
 description = "Inside WSL2 opens a html file in the browser that is in Win10. The local file path is transformed between Linux and Win10 notation."
 repository = "https://github.com/LucianoBestia/wsl_open_browser"
+readme = "README.md"
+license = "MIT"
+keywords = ["rust", "make"]
+categories = ["development-tools::build-utils"]
 # publish as a cargo tool. Only this files.
 publish = true
 include = [
