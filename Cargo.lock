@@ -10,7 +10,7 @@ checksum = "7e33648dd74328e622c7be51f3b40a303c63f93e6fa5f08778b6203a4c25c20f"
 
 [[package]]
 name = "wsl_open_browser"
-version = "2021.816.1157"
+version = "2021.822.842"
 dependencies = [
  "unwrap",
 ]
