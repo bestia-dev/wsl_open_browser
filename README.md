@@ -5,7 +5,7 @@
 [comment]: # (auto_cargo_toml_to_md start)
 
 **Inside WSL2 opens a html file in the browser that is in Win10. The local file path is transformed between Linux and Win10 notation.**  
-***[repository](https://github.com/LucianoBestia/wsl_open_browser); version: 2021.822.842  date: 2021-08-22 authors: Luciano Bestia***  
+***version: 2021.822.842  date: 2021-08-22 author: [dev_Bestia](https://bestia.dev) repository: [GitHub](https://github.com/LucianoBestia/wsl_open_browser)***  
 
 [comment]: # (auto_cargo_toml_to_md end)
 
