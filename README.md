@@ -5,20 +5,20 @@
 [comment]: # (auto_cargo_toml_to_md start)
 
 **Inside WSL2 opens a html file in the browser that is in Win10. The local file path is transformed between Linux and Win10 notation.**  
-***version: 2021.822.842  date: 2021-08-22 author: [dev_Bestia](https://bestia.dev) repository: [GitHub](https://github.com/LucianoBestia/wsl_open_browser)***  
+***version: 2021.822.842  date: 2021-08-22 author: [bestia.dev](https://bestia.dev) repository: [GitHub](https://github.com/bestia-dev/wsl_open_browser)***  
 
 [comment]: # (auto_cargo_toml_to_md end)
 
 [comment]: # (auto_lines_of_code start)
-[![Lines in Rust code](https://img.shields.io/badge/Lines_in_Rust-44-green.svg)](https://github.com/LucianoBestia/wsl_open_browser/)
-[![Lines in Doc comments](https://img.shields.io/badge/Lines_in_Doc_comments-113-blue.svg)](https://github.com/LucianoBestia/wsl_open_browser/)
-[![Lines in Comments](https://img.shields.io/badge/Lines_in_comments-15-purple.svg)](https://github.com/LucianoBestia/wsl_open_browser/)
-[![Lines in examples](https://img.shields.io/badge/Lines_in_examples-0-yellow.svg)](https://github.com/LucianoBestia/wsl_open_browser/)
-[![Lines in tests](https://img.shields.io/badge/Lines_in_tests-0-orange.svg)](https://github.com/LucianoBestia/wsl_open_browser/)
+[![Lines in Rust code](https://img.shields.io/badge/Lines_in_Rust-44-green.svg)](https://github.com/bestia-dev/wsl_open_browser/)
+[![Lines in Doc comments](https://img.shields.io/badge/Lines_in_Doc_comments-113-blue.svg)](https://github.com/bestia-dev/wsl_open_browser/)
+[![Lines in Comments](https://img.shields.io/badge/Lines_in_comments-15-purple.svg)](https://github.com/bestia-dev/wsl_open_browser/)
+[![Lines in examples](https://img.shields.io/badge/Lines_in_examples-0-yellow.svg)](https://github.com/bestia-dev/wsl_open_browser/)
+[![Lines in tests](https://img.shields.io/badge/Lines_in_tests-0-orange.svg)](https://github.com/bestia-dev/wsl_open_browser/)
 
 [comment]: # (auto_lines_of_code end)
 
-[![crates.io](https://img.shields.io/crates/v/cargo-auto.svg)](https://crates.io/crates/wsl_open_browser) [![Documentation](https://docs.rs/wsl_open_browser/badge.svg)](https://docs.rs/wsl_open_browser/) [![crev reviews](https://web.crev.dev/rust-reviews/badge/crev_count/wsl_open_browser.svg)](https://web.crev.dev/rust-reviews/crate/wsl_open_browser/) [![Lib.rs](https://img.shields.io/badge/Lib.rs-rust-orange.svg)](https://lib.rs/crates/wsl_open_browser/) [![Licence](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/LucianoBestia/wsl_open_browser/blob/master/LICENSE) [![Rust](https://github.com/LucianoBestia/wsl_open_browser/workflows/RustAction/badge.svg)](https://github.com/LucianoBestia/wsl_open_browser/)   
+[![crates.io](https://img.shields.io/crates/v/cargo-auto.svg)](https://crates.io/crates/wsl_open_browser) [![Documentation](https://docs.rs/wsl_open_browser/badge.svg)](https://docs.rs/wsl_open_browser/) [![crev reviews](https://web.crev.dev/rust-reviews/badge/crev_count/wsl_open_browser.svg)](https://web.crev.dev/rust-reviews/crate/wsl_open_browser/) [![Lib.rs](https://img.shields.io/badge/Lib.rs-rust-orange.svg)](https://lib.rs/crates/wsl_open_browser/) [![Licence](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/bestia-dev/wsl_open_browser/blob/master/LICENSE) [![Rust](https://github.com/bestia-dev/wsl_open_browser/workflows/RustAction/badge.svg)](https://github.com/bestia-dev/wsl_open_browser/)   
 
 ## Try it
 
