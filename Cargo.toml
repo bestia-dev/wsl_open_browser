@@ -1,7 +1,7 @@
 [package]
 name = "wsl_open_browser"
 version = "2021.822.842"
-authors = ["bestia.dev <info@bestia.dev>"]
+authors = ["bestia.dev"]
 edition = "2018"
 description = "Inside WSL2 opens a html file in the browser that is in Win10. The local file path is transformed between Linux and Win10 notation."
 repository = "https://github.com/bestia-dev/wsl_open_browser"
