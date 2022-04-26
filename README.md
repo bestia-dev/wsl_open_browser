@@ -18,7 +18,13 @@
 
 [comment]: # (auto_lines_of_code end)
 
-[![crates.io](https://img.shields.io/crates/v/cargo-auto.svg)](https://crates.io/crates/wsl_open_browser) [![Documentation](https://docs.rs/wsl_open_browser/badge.svg)](https://docs.rs/wsl_open_browser/) [![crev reviews](https://web.crev.dev/rust-reviews/badge/crev_count/wsl_open_browser.svg)](https://web.crev.dev/rust-reviews/crate/wsl_open_browser/) [![Lib.rs](https://img.shields.io/badge/Lib.rs-rust-orange.svg)](https://lib.rs/crates/wsl_open_browser/) [![Licence](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/bestia-dev/wsl_open_browser/blob/master/LICENSE) [![Rust](https://github.com/bestia-dev/wsl_open_browser/workflows/RustAction/badge.svg)](https://github.com/bestia-dev/wsl_open_browser/)   
+[![crates.io](https://img.shields.io/crates/v/cargo-auto.svg)](https://crates.io/crates/wsl_open_browser)
+[![Documentation](https://docs.rs/wsl_open_browser/badge.svg)](https://docs.rs/wsl_open_browser/)
+[![crev reviews](https://web.crev.dev/rust-reviews/badge/crev_count/wsl_open_browser.svg)](https://web.crev.dev/rust-reviews/crate/wsl_open_browser/)
+[![Lib.rs](https://img.shields.io/badge/Lib.rs-rust-orange.svg)](https://lib.rs/crates/wsl_open_browser/)
+[![Licence](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/bestia-dev/wsl_open_browser/blob/master/LICENSE)
+[![Rust](https://github.com/bestia-dev/wsl_open_browser/workflows/RustAction/badge.svg)](https://github.com/bestia-dev/wsl_open_browser/)
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fbestia-dev%2Fwsl_open_browser&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
 ## Try it
 
