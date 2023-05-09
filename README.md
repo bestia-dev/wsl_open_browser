@@ -24,7 +24,7 @@
 [![Lib.rs](https://img.shields.io/badge/Lib.rs-rust-orange.svg)](https://lib.rs/crates/wsl_open_browser/)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/bestia-dev/wsl_open_browser/blob/master/LICENSE)
 [![Rust](https://github.com/bestia-dev/wsl_open_browser/workflows/RustAction/badge.svg)](https://github.com/bestia-dev/wsl_open_browser/)
-![Hits](https://bestia.dev/webpage_hit_counter/get_svg_image/114112306.svg)
+![Hits](https://bestia.dev/webpage_hit_counter/get_svg_image/114112306.svg  )
 
 Hashtags: #rustlang #tutorial  
 My projects on Github are more like a tutorial than a finished product: [bestia-dev tutorials](https://github.com/bestia-dev/tutorials_rust_wasm).
@@ -158,5 +158,19 @@ ln -s "/usr/bin/wsl_open_browser" www
 ```
 
 The command `ln -s` is permanent and persistent. It makes a file that stays there forever.  
+
+## Open-source and free as a beer
+
+My open-source projects are free as a beer (MIT license).  
+I just love programming.  
+But I need also to drink. If you find my projects and tutorials helpful, please buy me a beer by donating to my [PayPal](https://paypal.me/LucianoBestia).  
+You know the price of a beer in your local bar ;-)  
+So I can drink a free beer for your health :-)  
+[Na zdravje!](https://translate.google.com/?hl=en&sl=sl&tl=en&text=Na%20zdravje&op=translate) [Alla salute!](https://dictionary.cambridge.org/dictionary/italian-english/alla-salute) [Prost!](https://dictionary.cambridge.org/dictionary/german-english/prost) [Nazdravlje!](https://matadornetwork.com/nights/how-to-say-cheers-in-50-languages/) 🍻
+
+[//bestia.dev](https://bestia.dev)  
+[//github.com/bestia-dev](https://github.com/bestia-dev)  
+[//bestiadev.substack.com](https://bestiadev.substack.com)  
+[//youtube.com/@bestia-dev-tutorials](https://youtube.com/@bestia-dev-tutorials)  
 
 [comment]: # (auto_md_to_doc_comments segment end A)
